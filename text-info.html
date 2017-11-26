@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Apply for Loans, Credit Cards, and financial services in India</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="blue_icon.jpg" type="image/png">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://use.fontawesome.com/578e02aff5.js"></script>
+  <style>
+    body, html {
+      height: 100%;
+  }
+  #main{
+    margin-top: 100px;
+    background-color: blue;
+    height: 800px;
+  }
+  .cash-filter-text-head{
+
+    text-align: center;
+    padding-top: 50px;
+    font-size: 36px;
+    color: white;
+    font-weight: 100;
+  }
+
+  .cash-filter-text-subhead{
+
+    text-align: center;
+    padding-top: 2px;
+    font-size: 14px;
+    color: white;
+    font-weight: 100;
+  }
+  .cash-filter-text-main{
+
+    padding-left: 180px;
+    padding-right: 180px;
+    padding-top: 30px !important;
+    text-align: center;
+    padding-top: 2px;
+    font-size: 38px;
+    color: white;
+    font-weight: 100;
+
+  }
+  .button-div{
+    text-align: center;
+    padding-top: 20px;
+  }
+  .button {
+      background-color: #f44336;
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+  }
+  .select-text-div-car{
+    width: 150px;
+    border-bottom-style: dotted;
+    border-width: 1px;
+    height: 50px;
+    display: inline-block;
+    color: black;
+  }
+  .select-text-div-car-a:hover{
+    text-decoration: none;
+
+  }
+
+</style>
+</head>
+
+<body>
+
+        <div id="main">
+            <div class="container">
+                <div class="cash-filter-text-head">Get your car loan quote in just seconds</div>
+                  <div class="cash-filter-text-subhead">We need a little info to see if you qualify for discounts.</div>
+                  <div class="cash-filter-text-main">
+                    I live in
+                    
+
+
+                     & work in
+
+
+
+
+                     . <br>
+                    I make Rs.
+
+
+
+
+                    per month. <br>
+                    I have  decided  to drive a
+                    <div class="select-text-div-car">
+                    <a href="#" class="select-text-div-car-a" id ="main-text" data-html='true' data-toggle="popover" data-placement="bottom" title="" data-content='<form><input id="txt_name" type="text"/> <button id="ok-button" type="button">Ok</button> </form>'>
+                    </a>
+                  </div>  .
+                  </div>
+                  <div class="button-div">
+                    <button class="button">Get a quote</button>
+                  </div>
+            </div>
+
+        </div>
+        <script>
+        $(document).ready(function(){
+          $('[data-toggle="popover"]').popover();
+
+          //bla = $('#txt_name').val();
+        //  $(".select-text-div-car-a").text("Hello world!");
+
+
+
+        });
+
+
+
+        i=0;
+        $( '.select-text-div-car' ).on( 'click', '#ok-button', function () {
+            console.log(i);
+            bla = $('#txt_name').val();
+            if (bla.length > 0) {
+                    $(".select-text-div-car-a").text(bla); }
+                    $(".popover").hide();
+
+                    i=i+1;
+
+           });
+
+        $( '.select-text-div-car' ).on( 'keypress', '#txt_name', function () {   if(event.keyCode == 13){
+
+            $('#ok-button').click();
+            }
+
+        });
+        </script>
+
+
+
+</body>
+</html>

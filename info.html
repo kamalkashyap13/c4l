@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Apply for Loans, Credit Cards, and financial services in India</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="blue_icon.jpg" type="image/png">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://use.fontawesome.com/578e02aff5.js"></script>
+  <style>
+    body, html {
+      height: 100%;
+  }
+#main {
+  margin-top: 100px;
+  background-color: blue;
+  height: 500px;
+}
+  #home {
+    height: 142px;
+    width: 142px;
+    display: inline-block;
+    background-repeat: no-repeat;
+      background: url(sprite-car.png) 0 0;
+  }
+  #next {
+    height: 142px;
+    width: 142px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background: url(sprite-car.png) 142px 0;
+  }
+  #label-div{
+    width: 50%;
+    width: 142px;
+  }
+  #label-text{
+    display: block;
+    text-align: center;
+    color: white;
+
+  }
+  #input-span {
+    text-align: center;
+  }
+  #label-input:hover{
+    background-color: black;
+  }
+  #input1{
+    visibility: hidden;
+  }
+  #circle-dot-icon{
+    visibility: hidden;
+  }
+  </style>
+</head>
+
+<body>
+        <div id="main">
+
+                <div id="label-div" class="">
+                  <label id="label-input" for="input1">
+                    <span id="home" ></span>
+                    <span id="label-text"> New car</span>
+                    <div id="input-span">
+                      <i id="circle-icon" class="fa fa-circle-o" aria-hidden="true"></i>
+                      <i id="circle-dot-icon" class="fa fa-dot-circle-o" aria-hidden="true"></i>
+                      <input type="radio"  value="OLD" id="input1">
+
+                    </div>
+                  </label>
+                </div>
+
+
+        </div>
+
+<script>
+$("#label-input").hover(function(){
+    $("#circle-icon").css("visibility", "hidden");
+    $("#circle-dot-icon").css("visibility", "visible");
+
+});
+</script>
+</body>
+</html>
